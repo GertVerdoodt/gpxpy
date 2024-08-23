@@ -1110,6 +1110,8 @@ class GPXTrackSegment:
         from_start_to_end = None
         if dist:
             from_start_to_end = distances[-1] + dist
+        else:
+            from_start_to_end = None
 
         assert len(interval) == len(distances)
 
